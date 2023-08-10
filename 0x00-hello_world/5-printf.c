@@ -1,7 +1,7 @@
-#include<stdio.>
+#include <stdio.h>
 /**
-** main - A prgram that uses prinf function
-* Return:0(succesful)
+* main - A prgram that uses prinf function
+* Return: 0 (succesful)
 */
 int main(void)
 {
