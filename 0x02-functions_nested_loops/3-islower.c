@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * _islower - function that returns 1 or zero if characters are in low case
  * @c: parameters
