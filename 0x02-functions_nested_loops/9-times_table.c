@@ -16,7 +16,7 @@ void times_table(void)
 		{
 			r = m * n;
 			if (n == 0)
-				printf("%d", r);
+				printf("%d, ", r);
 			else
 			{
 				printf("%2d", r);
