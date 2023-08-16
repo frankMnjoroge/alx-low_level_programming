@@ -20,8 +20,8 @@ void times_table(void)
 			else
 			{
 				printf("%2d", r);
-				if (n != 0)
-					printf(" ");
+				if (n != 9)
+					printf(", ");
 			}
 		}
 		printf("\n");
