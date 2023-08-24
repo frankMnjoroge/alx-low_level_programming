@@ -4,7 +4,7 @@
 * @dest: Detination string
 * @src: source string
 * @n: string bytes
-* Return: string copy
+* Return: dest
 */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -12,7 +12,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (m = 0 ; m < n && src[m] != '\0' ; m++)
 		dest[m] = src[m];
-	if (m < n)
+	while (m < n)
 	{
 		dest[m] = '\0';
 		m++;
