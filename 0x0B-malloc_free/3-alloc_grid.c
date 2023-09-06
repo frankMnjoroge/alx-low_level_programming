@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 					free(p[z]);
 				return (NULL);
 			}
-			for (z = 0; z < width; z++)
+			for (z = 0; z <= width; z++)
 				p[y][z] = 0;
 	}
 	return (p);
