@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -Pedantic -Werror -Wextra -c *.c
