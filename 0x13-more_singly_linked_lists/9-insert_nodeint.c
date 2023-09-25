@@ -13,7 +13,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *tempo = *head;
 
 	newnod = malloc(sizeof(listint_t));
-	if (!new || !head)
+	if (!newnod || !head)
 		return (NULL);
 	newnod->n = n;
 	newnod->next = NULL;
