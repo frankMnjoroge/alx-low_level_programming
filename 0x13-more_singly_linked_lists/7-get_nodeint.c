@@ -10,10 +10,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	unsigned int y = 0;
 	listint_t *tempo = head;
 
-	while (temp && y < index)
+	while (tempo && y < index)
 	{
 		tempo = tempo->next;
 		y++;
 	}
-	return (temp ? temp : NULL);
+	return (tempo ? tempo : NULL);
 }
