@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	def = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(def, text_content, leth);
+	win = write(def, text_content, leth);
 
 	if (def == -1 || win == -1)
 		return (-1);
