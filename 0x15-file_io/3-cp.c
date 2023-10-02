@@ -66,15 +66,15 @@ int main(int argc, char *argv[])
 
 	buffr = create_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
-	rd = read(from, buffer, 1024);
+	rd = read(from, buffr, 1024);
 	dt = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (from == -1 || r == -1)
+		if (from == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
-			free(buffer);
+			free(buffr);
 			exit(98);
 		}
 
